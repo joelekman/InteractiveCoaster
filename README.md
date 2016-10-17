@@ -12,10 +12,10 @@ The arduino code for the smart coaster
 ## Running the server
 
 - Identify the local IP address of the computer running the server
-##Change the IP Address in the following files:
+## Change the IP Address in the following files:
 - server/js/services/tables.js (line 11)
 - main/main.ino
-##From the command line:
+## From the command line:
 - run "npm install" (installing frontend js dependencies)
 - run "bower install" (installing development dependencies)
 - run "grunt" (minifying js, less and concatenating files)
