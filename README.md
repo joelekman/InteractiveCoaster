@@ -1,5 +1,10 @@
-# SmartCoasterArduino
-The arduino code for the smart coaster
+# Interactive coaster
+Interactive coaster is a collaborative effort by KTH Royal Institute of Technology students to explore the physical interaction design space. We up-cycled the traditional drink coaster concept and transformed it into a device that senses and expresses states. Smart coaster will help bar staff notice and respond to when people need a refill and when hey seek assistance. Smart coaster comes with a customisable companion application.
+
+For this project you will need a load cell (you can get one from a regular household scale), a micro-controller, a Neopixel RGB led ring and some other more or less necessary components. You will require some tools, a bit of skill and determination. We give you our shopping list, step by step instructions, files and code to guarantee your success. Enjoy!
+
+Max, Joel, Victor, Aroshine & Heidi
+
 
 ## Setup
 - Download the latest Ardunio IDE. (https://www.arduino.cc/en/Main/Software)
