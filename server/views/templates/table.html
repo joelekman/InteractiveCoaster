@@ -1,0 +1,13 @@
+<div class="table-visualization" ng-controller="tableCtrl" ng-init="setId(data.id)" ng-class="{attention: data.attention}">
+    <div class="table">
+        <a href="#" class="add" ng-click="addCoaster(data.id)"><i class="ion-icon ion-person-add"></i></a>
+        <div ng-controller="coasterCtrl" href="#" ng-repeat="coaster in data.coasters track by $index" class="coaster" ng-class="{'no-glass': coaster.weight < 80, low: coaster.weight < 300, full: coaster.weight > 300, 'you-sure': removeToggle, 'attention': coaster.attention, 'inactive': coaster.inactive}" style="transform: rotate({{360/data.coasters.length*($index+1)}}deg) translate(70px) rotate(-{{360/data.coasters.length*($index+1)}}deg);">
+            <div class="toggle" ng-click="youSure()">{{ coaster.id }}</div>
+            <div class="toggle" ng-click="remove(data.id, coaster.id)">Remove</div>
+        </div>
+    </div>
+    <h2 class="id">{{ data.id }}</h2>
+    <a href="#" class="action remove" ng-click="removeTable(data.id)"><i class="ion-icon ion-minus-circled"></i></a>
+    <a href="#" class="action low" ng-class="{hide: !data.low}"><i class="ion-icon ion-android-warning"></i></a>
+    <a href="#" class="action information" ng-class="{hide: !data.attention}" ng-click="resetAttention(data.id)"><i class="ion-icon ion-ios-checkmark"></i></a>
+</div>

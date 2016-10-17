@@ -1,0 +1,18 @@
+{
+  "name": "SmartCoasterClient",
+  "description": "Smart Coaster Dashboard",
+  "version": "0.0.1",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "*",
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-notify": "*",
+    "ws": "^1.1.1"
+  }
+}

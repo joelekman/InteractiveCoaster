@@ -1,0 +1,12 @@
+<div id="layout">
+    <div id="sidebar">
+        <a href="#" ng-click="addTable()"><i class="ion-icon ion-plus"></i></a>
+        <a href="#" ng-click="tare()"><i class="ion-icon ion-android-arrow-down"></i></a>
+        <a href="#" ng-click="calibrate()"><i class="ion-icon ion-gear-a"></i></a>
+
+        <a href="#" ng-click="reset()" class="reset"><i class="ion-icon ion-ios-refresh-outline"></i></a>
+    </div>
+    <div id="container">
+        <table-view class="table-view" ng-repeat="table in state() track by $index" data="table" table-id="{{table.id}}"></table-view>
+    </div>
+</div>
